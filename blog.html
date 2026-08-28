@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium restaurant offering delicious cuisine, elegant dining and exceptional service."
+    />
+    <meta
+      name="keywords"
+      content="restaurant, fine dining, food, dinner, lunch, reservation"
+    />
+    <meta name="author" content="Spice Garden Restaurant" />
+    <title>Spice Garden Restaurant | Fine Dining Experience</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_shopping_cart"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/pages/blog.css" />
+
+    <!-- Header, Advertisement and Footer CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body>
+    <!-- ================= BLOG HERO BACKGROUND ================= -->
+    <div class="blog-video-container">
+      <div class="blog-hero-overlay"></div>
+
+      <video autoplay muted loop playsinline id="blog-bg-video">
+        <source
+          src="./assets/images/hero/restoria-preview.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <header>
+      <!-- -------LOGO-------- -->
+      <div class="logo">
+        <a href="index.html"><img src="./assets/logo/logo-sm-white.png" /></a>
+      </div>
+      <!-- -------NAVIGATION BAR-------- -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- -------HAMBURGER MENU-------- -->
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- ------Reservation Button------- -->
+      <a href="./contact.html" class="tst-btn tst-res-btn">Reservation</a>
+      <!-- ---------cart-------- -->
+      <a href="./shop.html" class="header-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </header>
+
+    <!-- ================= BLOG HERO ================= -->
+    <section class="blog-hero" id="blog">
+      <div class="blog-hero-content">
+        <span class="blog-hero-subtitle">From Our Kitchen</span>
+
+        <h1>Spice Garden Blog</h1>
+
+        <p>
+          Discover delicious food stories, culinary inspiration, restaurant
+          moments, and the flavors behind Spice Garden.
+        </p>
+
+        <div class="blog-hero-buttons">
+          <a href="#featured-blog" class="blog-btn blog-btn-primary">
+            Explore Stories
+          </a>
+
+          <a href="./menu.html" class="blog-btn blog-btn-secondary">
+            Explore Our Menu
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED BLOG ================= -->
+    <section class="featured-blog-section" id="featured-blog">
+      <div class="blog-container">
+        <!-- Section Heading -->
+        <div class="blog-section-heading">
+          <span class="blog-eyebrow">From Our Kitchen</span>
+
+          <h2>Featured Blog</h2>
+
+          <p>
+            Explore our latest food stories, culinary inspiration, and the
+            flavors that make every Spice Garden experience special.
+          </p>
+        </div>
+
+        <!-- Blog Cards -->
+        <div class="blog-card-grid">
+          <!-- Blog Card 1 -->
+          <article class="blog-card">
+            <div class="blog-card-image">
+              <img
+                src="./assets/images/food-gallery/biryani.webp"
+                alt="Traditional Biryani"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="blog-card-content">
+              <span class="blog-category">Food Stories</span>
+
+              <h3>The Story Behind Our Signature Biryani</h3>
+
+              <p>
+                Discover the rich flavors, aromatic spices, and traditional
+                cooking that make our biryani special.
+              </p>
+
+              <div class="blog-card-meta">
+                <span>
+                  <i class="fa-regular fa-calendar"></i>
+                  August 20, 2026
+                </span>
+              </div>
+
+              <a href="#" class="blog-read-more">
+                Read More
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article class="blog-card">
+            <div class="blog-card-image">
+              <img
+                src="./assets/images/food-gallery/pizza.webp"
+                alt="Freshly prepared Pizza"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="blog-card-content">
+              <span class="blog-category">Restaurant Tips</span>
+
+              <h3>How To Enjoy The Perfect Dining Experience</h3>
+
+              <p>
+                From choosing the right dish to enjoying every moment, discover
+                simple tips for a better dining experience.
+              </p>
+
+              <div class="blog-card-meta">
+                <span>
+                  <i class="fa-regular fa-calendar"></i>
+                  August 16, 2026
+                </span>
+              </div>
+
+              <a href="#" class="blog-read-more">
+                Read More
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="blog-card">
+            <div class="blog-card-image">
+              <img
+                src="./assets/images/food-gallery/dessert.webp"
+                alt="Delicious Dessert"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="blog-card-content">
+              <span class="blog-category">Culinary Inspiration</span>
+
+              <h3>Why Every Great Meal Deserves A Sweet Ending</h3>
+
+              <p>
+                Take a look at the art of desserts and discover why the final
+                course can become your favorite memory.
+              </p>
+
+              <div class="blog-card-meta">
+                <span>
+                  <i class="fa-regular fa-calendar"></i>
+                  August 12, 2026
+                </span>
+              </div>
+
+              <a href="#" class="blog-read-more">
+                Read More
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOD STORIES ================= -->
+    <section class="food-stories-section">
+      <div class="blog-container">
+        <div class="food-stories-grid">
+          <!-- Content -->
+          <div class="food-stories-content">
+            <span class="blog-eyebrow"> More From Spice Garden </span>
+
+            <h2>Food Stories &amp; Restaurant Tips</h2>
+
+            <p>
+              Food is more than what we serve on a plate. It is about tradition,
+              creativity, people, and the moments we share together.
+            </p>
+
+            <p>
+              Explore our stories and discover useful restaurant tips, culinary
+              ideas, and inspiration for your next dining experience.
+            </p>
+
+            <div class="food-story-list">
+              <div class="food-story-item">
+                <div class="food-story-icon">
+                  <i class="fa-solid fa-utensils"></i>
+                </div>
+
+                <div>
+                  <h3>Discover New Flavors</h3>
+
+                  <p>
+                    Explore ingredients and dishes that bring something
+                    different to your table.
+                  </p>
+                </div>
+              </div>
+
+              <div class="food-story-item">
+                <div class="food-story-icon">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <div>
+                  <h3>Dining Tips</h3>
+
+                  <p>
+                    Simple ideas to make your restaurant experience even more
+                    enjoyable.
+                  </p>
+                </div>
+              </div>
+
+              <div class="food-story-item">
+                <div class="food-story-icon">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div>
+                  <h3>Stories We Love</h3>
+
+                  <p>
+                    Meet the people, traditions and inspiration behind our food.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="food-stories-media">
+            <img
+              src="./assets/images/food-gallery/salad.webp"
+              alt="Fresh salad prepared at Spice Garden"
+              loading="lazy"
+            />
+
+            <div class="food-stories-badge">
+              <i class="fa-solid fa-quote-left"></i>
+
+              <p>Every dish has a story.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BLOG CTA ================= -->
+    <section class="blog-cta-section">
+      <div class="blog-cta-overlay"></div>
+
+      <div class="blog-cta-content">
+        <span class="blog-eyebrow"> Your Table Is Waiting </span>
+
+        <h2>Come Taste The Spice Garden Experience</h2>
+
+        <p>
+          Join us for delicious food, warm hospitality and moments worth
+          sharing.
+        </p>
+
+        <div class="blog-cta-buttons">
+          <a href="./menu.html" class="blog-btn blog-btn-primary">
+            View Our Menu
+          </a>
+
+          <a href="#reservation" class="blog-btn blog-btn-secondary">
+            Reserve A Table
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer----------- -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-overlay"></div>
+        
+          <!-- Brand -->
+          <div class="footer-column footer-brand">
+            <a href="#" class="footer-logo">Spice <span>Garden</span></a>
+
+            <p>
+              Experience authentic flavors, warm hospitality, and unforgettable
+              dining at Spice Garden.
+            </p>
+
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+
+              <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <ul class="footer-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./menu.html">Our Menu</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Opening Hours -->
+          <div class="footer-column">
+            <h3>Opening Hours</h3>
+
+            <div class="opening-hours">
+              <div>
+                <span>Monday - Friday</span>
+                <strong>11:00 AM - 10:30 PM</strong>
+              </div>
+
+              <div>
+                <span>Saturday</span>
+                <strong>11:00 AM - 11:00 PM</strong>
+              </div>
+
+              <div>
+                <span>Sunday</span>
+                <strong>12:00 PM - 10:30 PM</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+
+            <ul class="footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Lucknow, Uttar Pradesh, India</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:info@spicegarden.com"> info@spicegarden.com </a>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Bottom Footer -->
+          <div class="footer-bottom">
+            <p>© 2026 Spice Garden. All Rights Reserved.</p>
+            
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions</a>
+            </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

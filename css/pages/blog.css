@@ -1,0 +1,644 @@
+/* ================= VIDEO BACKGROUND ================= */
+
+.blog-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 560px;
+  z-index: -2;
+  overflow: hidden;
+}
+
+#blog-bg-video {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.blog-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* ================= BLOG HERO ================= */
+
+.blog-hero {
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8%;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.blog-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* ================= SUBTITLE ================= */
+
+.blog-hero-subtitle {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: var(--bg-light);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* ================= HEADING ================= */
+
+.blog-hero h1 {
+  margin-bottom: 20px;
+  color: var(--bg-white);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  line-height: 1.05;
+}
+
+/* ================= DESCRIPTION ================= */
+
+.blog-hero-content > p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  color: var(--bg-white);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ================= BUTTONS ================= */
+
+.blog-hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.blog-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 165px;
+  padding: 13px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+/* ================= PRIMARY BUTTON ================= */
+
+.blog-btn-primary {
+  background: var(--btn-primary);
+  color: var(--btn-text);
+  border: 1px solid var(--btn-primary);
+}
+
+.blog-btn-primary:hover {
+  background: var(--btn-hover);
+  border-color: var(--btn-hover);
+  transform: translateY(-3px);
+}
+
+/* ================= SECONDARY BUTTON ================= */
+
+.blog-btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--border-gold);
+}
+
+.blog-btn-secondary:hover {
+  background: var(--btn-primary);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+  .blog-video-container {
+    height: 560px;
+  }
+
+  #blog-bg-video {
+    width: 1920px;
+    height: 1080px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: none;
+  }
+
+  .blog-hero {
+    min-height: 90vh;
+    padding: 110px 6% 80px;
+  }
+
+  .blog-hero h1 {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .blog-hero {
+    min-height: 85vh;
+    padding: 100px 5% 120px;
+  }
+
+  .blog-hero-subtitle {
+    margin-bottom: 15px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+
+  .blog-hero h1 {
+    margin-bottom: 18px;
+    font-size: 2.5rem;
+  }
+
+  .blog-hero-content > p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .blog-hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .blog-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+/* =========================================================
+   FEATURED BLOG
+========================================================= */
+
+.featured-blog-section {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.blog-container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* ================= SECTION HEADING ================= */
+
+.blog-section-heading {
+  max-width: 700px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.blog-eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--gold-dark);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.blog-section-heading h2 {
+  margin-bottom: 15px;
+  color: var(--text-dark);
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+}
+
+.blog-section-heading p {
+  color: var(--text-medium);
+  line-height: 1.8;
+}
+
+/* =========================================================
+   BLOG CARD GRID
+========================================================= */
+
+.blog-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* ================= BLOG CARD ================= */
+
+.blog-card {
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ================= IMAGE ================= */
+
+.blog-card-image {
+  height: 245px;
+  overflow: hidden;
+}
+
+.blog-card-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.blog-card:hover .blog-card-image img {
+  transform: scale(1.06);
+}
+
+/* ================= CARD CONTENT ================= */
+
+.blog-card-content {
+  padding: 25px;
+}
+
+/* ================= CATEGORY ================= */
+
+.blog-category {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--gold-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* ================= TITLE ================= */
+
+.blog-card-content h3 {
+  margin-bottom: 12px;
+  color: var(--text-dark);
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+/* ================= DESCRIPTION ================= */
+
+.blog-card-content > p {
+  margin-bottom: 20px;
+  color: var(--text-light);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* ================= DATE ================= */
+
+.blog-card-meta {
+  padding-top: 15px;
+  margin-bottom: 18px;
+  border-top: 1px solid var(--border-light);
+  color: var(--text-light);
+  font-size: 0.82rem;
+}
+
+.blog-card-meta i {
+  margin-right: 6px;
+  color: var(--gold-dark);
+}
+
+/* ================= READ MORE ================= */
+
+.blog-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold-dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.blog-read-more i {
+  font-size: 0.75rem;
+  transition: var(--transition);
+}
+
+.blog-read-more:hover {
+  color: var(--btn-hover);
+}
+
+.blog-read-more:hover i {
+  transform: translateX(5px);
+}
+
+/* =========================================================
+   FOOD STORIES / RESTAURANT TIPS
+========================================================= */
+
+.food-stories-section {
+  padding: 100px 0;
+  background: var(--bg-light);
+}
+
+.food-stories-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+/* ================= CONTENT ================= */
+
+.food-stories-content h2 {
+  margin-bottom: 20px;
+  color: var(--text-dark);
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  line-height: 1.2;
+}
+
+.food-stories-content > p {
+  margin-bottom: 18px;
+  color: var(--text-medium);
+  line-height: 1.85;
+}
+
+/* ================= STORY LIST ================= */
+
+.food-story-list {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.food-story-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.food-story-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(243, 156, 18, 0.1);
+  color: var(--gold-dark);
+  font-size: 1rem;
+}
+
+.food-story-item h3 {
+  margin-bottom: 5px;
+  color: var(--text-dark);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+}
+
+.food-story-item p {
+  color: var(--text-light);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+/* ================= MEDIA ================= */
+
+.food-stories-media {
+  position: relative;
+  min-height: 520px;
+}
+
+.food-stories-media > img {
+  width: 100%;
+  height: 520px;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+/* ================= QUOTE BADGE ================= */
+
+.food-stories-badge {
+  position: absolute;
+  right: -25px;
+  bottom: 30px;
+  width: 230px;
+  padding: 25px;
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+}
+
+.food-stories-badge i {
+  margin-bottom: 10px;
+  color: var(--gold-dark);
+  font-size: 1.2rem;
+}
+
+.food-stories-badge p {
+  color: var(--text-dark);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   BLOG CTA
+========================================================= */
+
+.blog-cta-section {
+  position: relative;
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 20px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),
+    url("../../assets/images/other/advertise.webp") center / cover no-repeat;
+}
+
+.blog-cta-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.blog-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  text-align: center;
+}
+
+.blog-cta-content .blog-eyebrow {
+  color: var(--gold-light);
+}
+
+.blog-cta-content h2 {
+  margin-bottom: 15px;
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+}
+
+.blog-cta-content > p {
+  max-width: 600px;
+  margin: 0 auto 28px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.8;
+}
+
+.blog-cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* =========================================================
+   BLOG RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+  .blog-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .food-stories-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .food-stories-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .food-stories-media {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .food-stories-badge {
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-blog-section,
+  .food-stories-section {
+    padding: 75px 0;
+  }
+
+  .blog-card-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .food-stories-media,
+  .food-stories-media > img {
+    min-height: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-container {
+    width: min(100% - 30px, 1200px);
+  }
+
+  .featured-blog-section,
+  .food-stories-section {
+    padding: 60px 0 70px;
+  }
+
+  .blog-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .blog-section-heading h2,
+  .food-stories-content h2 {
+    font-size: 2rem;
+  }
+
+  .blog-card-image {
+    height: 220px;
+  }
+
+  .blog-card-content {
+    padding: 22px;
+  }
+
+  .food-stories-media,
+  .food-stories-media > img {
+    min-height: 330px;
+    height: 330px;
+  }
+
+  .food-stories-badge {
+    right: 5px;
+    bottom: -20px;
+    width: 200px;
+    padding: 18px;
+  }
+
+  .blog-cta-section {
+    min-height: 360px;
+    padding: 60px 15px;
+  }
+
+  .blog-cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .blog-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .blog-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+}

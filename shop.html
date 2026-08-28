@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium restaurant offering delicious cuisine, elegant dining and exceptional service."
+    />
+    <meta
+      name="keywords"
+      content="restaurant, fine dining, food, dinner, lunch, reservation"
+    />
+    <meta name="author" content="Spice Garden Restaurant" />
+    <title>Spice Garden Restaurant | Fine Dining Experience</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_shopping_cart"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/pages/shop.css" />
+    <!-- --Header, Advertisment and Footer CSS-- -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <!-- ================= SHOP HERO VIDEO ================= -->
+
+    <div class="shop-video-container">
+      <div class="shop-hero-overlay"></div>
+
+      <video autoplay muted loop id="shop-bg-video">
+        <source
+          src="./assets/images/hero/restoria-preview.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <header>
+      <!-- -------LOGO-------- -->
+      <div class="logo">
+        <a href="index.html"><img src="./assets/logo/logo-sm-white.png" /></a>
+      </div>
+      <!-- -------NAVIGATION BAR-------- -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- -------HAMBURGER MENU-------- -->
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- ------Reservation Button------- -->
+      <a href="./contact.html" class="tst-btn tst-res-btn">Reservation</a>
+      <!-- ---------cart-------- -->
+      <a href="./shop.html" class="header-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </header>
+
+    <!-- ================= SHOP HERO ================= -->
+
+    <section class="shop-hero" id="shop">
+      <div class="shop-hero-content">
+        <span class="shop-hero-subtitle"> Fresh & Delicious </span>
+
+        <h1>Your Shopping Cart</h1>
+
+        <p>
+          Review your favorite dishes, adjust your quantities, and get ready to
+          enjoy the authentic flavors of Spice Garden.
+        </p>
+
+        <div class="shop-hero-buttons">
+          <a href="./menu.html" class="shop-btn shop-btn-primary">
+            Explore Menu
+          </a>
+
+          <a href="./shop.html" class="shop-btn shop-btn-secondary" id="view-cart-btn"> View Cart </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SLIDER SECTION ================= -->
+
+    <div class="shop-slider" id="shop-slider">
+      <!-- ================= ORDER SUMMARY ================= -->
+
+      <section class="cart-section" id="cart">
+        <div class="cart-container">
+          <!-- --Cart Header-- -->
+          <div class="cart-heading">
+            <span>Order Summary</span>
+            <h2>Your Selected Items</h2>
+          </div>
+
+          <div class="cart-layout">
+            <!-- CART ITEMS -->
+            <div class="cart-items-container" id="cart-items">
+              <!-- JS yahan products dalega -->
+            </div>
+
+            <!-- CART SUMMARY -->
+            <aside class="cart-summary">
+              <h3>Cart Summary</h3>
+
+              <div class="summary-row">
+                <span>Total Items</span>
+                <span id="summary-items">0</span>
+              </div>
+
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">₹0</span>
+              </div>
+
+              <div class="summary-divider"></div>
+
+              <div class="summary-total">
+                <span>Total</span>
+                <strong id="cart-total">₹0</strong>
+              </div>
+
+              <button type="button" class="checkout-btn" id="checkout-btn">
+                Proceed To Order
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+
+              <a href="./menu.html" class="continue-shopping">
+                <i class="fa-solid fa-arrow-left"></i>
+                Continue Shopping
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LOCATION SECTION ================= -->
+
+      <section class="location-section" id="location">
+        <div class="location-container">
+          <!-- --Location Header-- -->
+          <div class="location-header">
+            <span>Step 1</span>
+            <h2>Delivery Location</h2>
+            <p>Enter your delivery details to continue.</p>
+          </div>
+
+          <!-- --Location Form-- -->
+          <form class="location-form" id="location-form">
+            <div class="form-group">
+              <label for="customer-name">Full Name</label>
+              <input
+                type="text"
+                id="customer-name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="customer-phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="customer-phone"
+                  placeholder="Enter phone number"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="customer-pincode">Pincode</label>
+                <input
+                  type="text"
+                  id="customer-pincode"
+                  placeholder="Enter pincode"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="customer-address">Delivery Address</label>
+              <textarea
+                id="customer-address"
+                rows="4"
+                placeholder="House no., street, area, landmark"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="customer-city">City</label>
+                <input
+                  type="text"
+                  id="customer-city"
+                  placeholder="Enter city"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="customer-state">State</label>
+                <input
+                  type="text"
+                  id="customer-state"
+                  placeholder="Enter state"
+                  required
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="checkout-next-btn">
+              Continue to Payment
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ================= PAYMENT SECTION ================= -->
+      <section class="payment-section" id="payment">
+        <div class="payment-container">
+          <!-- --Payment Header-- -->
+          <div class="payment-header">
+            <span>Step 2</span>
+            <h2>Payment Method</h2>
+            <p>Choose your preferred payment method.</p>
+          </div>
+
+          <!-- --Payment Options-- -->
+          <div class="payment-card">
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="cod" />
+
+              <span class="payment-icon">
+                <i class="fa-solid fa-money-bill-wave"></i>
+              </span>
+
+              <span class="payment-info">
+                <strong>Cash on Delivery</strong>
+                <small>Pay when your order arrives.</small>
+              </span>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="upi" />
+
+              <span class="payment-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </span>
+
+              <span class="payment-info">
+                <strong>UPI</strong>
+                <small>Pay securely using UPI.</small>
+              </span>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment-method" value="card" />
+
+              <span class="payment-icon">
+                <i class="fa-solid fa-credit-card"></i>
+              </span>
+
+              <span class="payment-info">
+                <strong>Card</strong>
+                <small>Pay using debit or credit card.</small>
+              </span>
+            </label>
+          </div>
+
+          <button type="button" class="payment-back-btn" id="payment-back">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Location
+          </button>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- footer----------- -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-overlay"></div>
+
+        <!-- Brand -->
+        <div class="footer-column footer-brand">
+          <a href="#" class="footer-logo">Spice <span>Garden</span></a>
+
+          <p>
+            Experience authentic flavors, warm hospitality, and unforgettable
+            dining at Spice Garden.
+          </p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./menu.html">Our Menu</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-column">
+          <h3>Opening Hours</h3>
+
+          <div class="opening-hours">
+            <div>
+              <span>Monday - Friday</span>
+              <strong>11:00 AM - 10:30 PM</strong>
+            </div>
+
+            <div>
+              <span>Saturday</span>
+              <strong>11:00 AM - 11:00 PM</strong>
+            </div>
+
+            <div>
+              <span>Sunday</span>
+              <strong>12:00 PM - 10:30 PM</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Lucknow, Uttar Pradesh, India</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@spicegarden.com"> info@spicegarden.com </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+          <p>© 2026 Spice Garden. All Rights Reserved.</p>
+
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/shop.js"></script>
+  </body>
+</html>

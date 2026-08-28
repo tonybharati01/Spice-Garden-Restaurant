@@ -1,0 +1,803 @@
+:root {
+  --white: #ffffff;
+  --gold: #c9a227;
+  --gold-light: #d8b84c;
+  --gold-dark: #a68118;
+
+  --text-dark: #1c1c1c;
+  --text-medium: #555555;
+  --text-light: #777777;
+
+  --bg-white: #ffffff;
+  --bg-light: #faf9f6;
+  --bg-cream: #f7f3ea;
+
+  --border-light: #e8e3d8;
+  --border-gold: #c9a227;
+
+  --btn-primary: #f39c12;
+  --btn-hover: #d68c14;
+  --btn-text: #ffffff;
+
+  --link-color: #a68118;
+  --link-hover: #c9a227;
+
+  --shadow-sm: 0 2px 8px #c9a227;
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Josefin sans", sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --navbar-height: 85px;
+
+  --transition: 0.3s ease;
+
+  --footer-bg: #171717;
+  --footer-text: #eaeaea;
+  --footer-heading: #ffffff;
+  --footer-accent: #c9a227;
+}
+
+/* =========================================================
+   CSS RESET & GLOBAL STYLES
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-dark);
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-medium);
+}
+
+::selection {
+  background-color: var(--gold);
+  color: var(--white);
+}
+
+header {
+  position: relative;
+  background-color: var(--bg-cream);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: var(--navbar-height);
+  margin: 18px;
+  padding: 50px;
+  border-radius: 12px;
+}
+
+.logo {
+  width: 150px;
+  height: 53px;
+  margin-right: auto;
+  filter: brightness(0);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-right: 40px;
+}
+
+.nav-links a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 12px;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: var(--btn-hover);
+}
+
+.tst-btn {
+  position: relative;
+  /* right: 115px; */
+  background: var(--btn-primary);
+  font-size: 23px;
+  padding: 15px 30px;
+  margin-right: 30px;
+  border-radius: 6px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.tst-btn:hover {
+  background-color: var(--btn-hover);
+  filter: brightness(108%);
+  transform: scale(1.015);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.cart {
+  /* color: var(--primary); */
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* ------header mobile and tablet view------- */
+@media (max-width: 768px) {
+  header {
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    gap: 20px;
+  }
+  .logo {
+    position: relative;
+    width: 94px;
+    height: 20px;
+    margin-left: -30px;
+    top: -10px;
+  }
+  .hamburger {
+    position: relative;
+    display: block;
+    font-size: 24px;
+    right: -33px;
+  }
+  .nav-links {
+    position: fixed;
+    right: -100%;
+    top: 85px; /* Apne navbar ki height ke hisaab se set karein */
+    flex-direction: column;
+    background: #fff;
+    width: 52vh;
+    margin: 15px;
+    gap: 0;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+    z-index: 9999;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .nav-links.active {
+    left: 0;
+  }
+  .nav-links li {
+    margin: 20px 0;
+  }
+  .tst-btn {
+    display: none;
+  }
+  .header-cart {
+    position: relative;
+    display: block;
+    /* margin-right: 0; */
+    right: -30px;
+  }
+  body {
+    height: 340px;
+  }
+}
+
+/* =================================
+   BIRYANI AD SECTION
+================================= */
+
+.biryani-ad {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-image: url("../assets/images/other/advertise.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* =================================
+   CONTENT
+================================= */
+
+.biryani-overlay {
+  position: relative;
+  z-index: 2;
+  width: 55%;
+  max-width: 650px;
+  /* text-align: center; */
+  padding: 45px 30px;
+  /* Very light background so text remains readable */
+  /* background: rgba(255, 255, 255, 0.12); */
+  backdrop-filter: blur(1px);
+}
+
+/* =================================
+   LABEL
+================================= */
+
+.ad-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: brown;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+/* =================================
+   HEADING
+================================= */
+
+.biryani-overlay h2 {
+  margin: 0;
+  color: #292929;
+  font-size: 3.2rem;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+.biryani-overlay h2 span {
+  display: block;
+  margin-top: 8px;
+  color: #5a2b0c;
+  font-size: 8.5rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+/* =================================
+   TAGLINE
+================================= */
+
+.ad-tagline {
+  margin: 18px 0 8px;
+  color: #356b24;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* =================================
+   DESCRIPTION
+================================= */
+
+.ad-description {
+  max-width: 560px;
+  margin: 18px 0 18px;
+  color: brown;
+  font-size: 2.2rem;
+  line-height: 1.7;
+}
+
+/* =================================
+   FEATURES
+================================= */
+
+.ad-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.ad-features span {
+  color: #2e1515;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* =================================
+   ORDER BUTTON
+================================= */
+
+.ad-order-btn {
+  display: inline-block;
+  padding: 13px 35px;
+  background: var(--btn-primary);
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.ad-order-btn:hover {
+  background: var(--btn-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* =================================
+   LIMITED OFFER
+================================= */
+
+.ad-limited {
+  margin: 10px 0 0;
+  color: #5a2b0c;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* =================================
+   50% OFF BADGE
+================================= */
+
+.offer-badge {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 18%;
+  width: 200px;
+  height: 200px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #f39c12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: offerPulse 2s ease-in-out infinite;
+}
+
+/* =================================
+   50% ANIMATION
+================================= */
+
+@keyframes offerPulse {
+  0% {
+    transform: translateY(-50%) scale(1);
+  }
+
+  50% {
+    transform: translateY(-50%) scale(1.08);
+  }
+
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+.offer-badge span {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.offer-badge strong {
+  margin-top: 5px;
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 1000px) {
+  .biryani-ad {
+    min-height: 450px;
+  }
+
+  .biryani-overlay {
+    width: 60%;
+  }
+
+  .biryani-overlay h2 {
+    font-size: 1.8rem;
+  }
+
+  .biryani-overlay h2 span {
+    font-size: 3.2rem;
+  }
+
+  .offer-badge {
+    width: 100px;
+    height: 100px;
+
+    right: 3%;
+  }
+
+  .offer-badge span {
+    font-size: 1.8rem;
+  }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+  .biryani-ad {
+    min-height: 650px;
+
+    background-position: left center;
+
+    align-items: flex-end;
+  }
+
+  .biryani-overlay {
+    width: 100%;
+
+    padding: 35px 20px 30px;
+
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.97),
+      rgba(255, 255, 255, 0.82),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  .biryani-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .biryani-overlay h2 span {
+    font-size: 2.7rem;
+  }
+
+  .ad-tagline {
+    font-size: 1rem;
+  }
+
+  .ad-description {
+    font-size: 0.85rem;
+  }
+
+  .ad-features {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .offer-badge {
+    top: 25px;
+    right: 20px;
+
+    transform: none;
+
+    width: 90px;
+    height: 90px;
+  }
+
+  .offer-badge span {
+    font-size: 1.6rem;
+  }
+
+  .offer-badge strong {
+    font-size: 0.75rem;
+  }
+
+  @keyframes offerPulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.08);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+  position: relative;
+  background: url(../assets/images/other/bg.webp);
+  color: #ffffff;
+  padding-top: 70px;
+}
+
+.footer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.48);
+}
+
+/* Container */
+.footer-container {
+  width: min(1380px, 90%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr 1.2fr;
+  gap: 40px 58px;
+  /* padding-bottom: 60px; */
+}
+
+/* Brand */
+.footer-logo {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-family: "Josefin sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-logo span {
+  position: relative;
+  color: var(--btn-primary);
+}
+
+.footer-brand p {
+  position: relative;
+  max-width: 330px;
+  color: var(--bg-white);
+  line-height: 1.7;
+  font-family: var(--font-body);
+}
+
+/* Social Icons */
+
+.footer-social {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--bg-white);
+  border-radius: 50%;
+  color: var(--bg-white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: var(--btn-hover);
+  border-color: var(--btn-hover);
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+/* Columns */
+
+.footer-column h3 {
+  position: relative;
+  margin-bottom: 25px;
+  font-size: 1.15rem;
+  color: #ffffff;
+}
+
+.footer-column h3::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 2px;
+  margin-top: 10px;
+  background: var(--btn-primary);
+}
+
+/* Quick Links */
+
+.footer-links {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 13px;
+}
+
+.footer-links a {
+  color: #888;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--btn-hover);
+}
+
+/* Opening Hours */
+
+.opening-hours div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 18px;
+}
+
+.opening-hours span {
+  color: #bdbdbd;
+  font-size: 0.9rem;
+}
+
+.opening-hours strong {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+/* Contact */
+.footer-contact {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+  color: #bdbdbd;
+  line-height: 1.5;
+}
+
+.footer-contact i {
+  width: 18px;
+  margin-top: 4px;
+  color: var(--btn-primary);
+}
+
+.footer-contact a {
+  color: #bdbdbd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: var(--btn-primary);
+}
+
+/* Bottom */
+
+.footer-bottom {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 22px 0;
+  border-top: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-bottom-links a {
+  color: #888;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: var(--btn-primary);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer-container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

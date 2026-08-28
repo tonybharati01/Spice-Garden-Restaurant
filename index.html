@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium restaurant offering delicious cuisine, elegant dining and exceptional service."
+    />
+    <meta
+      name="keywords"
+      content="restaurant, fine dining, food, dinner, lunch, reservation"
+    />
+    <meta name="author" content="Spice Garden Restaurant" />
+    <title>Spice Garden Restaurant | Fine Dining Experience</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_shopping_cart"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- --Header and Footer CSS-- -->
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body>
+    <div class="video-container">
+      <div class="hero-overlay"></div>
+      <video autoplay muted loop id="bg-video">
+        <source
+          src="./assets/images/hero/restoria-preview.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <header>
+      <!-- -------LOGO-------- -->
+      <div class="logo">
+        <a href="index.html"><img src="./assets/logo/logo-sm-white.png" /></a>
+      </div>
+      <!-- -------NAVIGATION BAR-------- -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- -------HAMBURGER MENU-------- -->
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- ------Reservation Button------- -->
+      <a href="./contact.html" class="tst-btn tst-res-btn">Reservation</a>
+      <!-- ---------cart-------- -->
+     <a href="./shop.html" class="header-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="hero-subtitle">WELCOME TO SPICE GARDEN</span>
+
+        <h1>
+          Authentic Taste,
+          <span>Beautifully Served</span>
+        </h1>
+
+        <p>
+          Experience the rich flavors of authentic Indian cuisine, prepared with
+          fresh ingredients, traditional recipes, and a touch of modern
+          elegance.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="./menu.html" class="btn btn-primary"> View Our Menu </a>
+
+          <a href="./contact.html" class="btn btn-secondary"> Reserve a Table </a>
+        </div>
+
+        <div class="hero-features">
+          <span>Fresh Ingredients</span>
+          <span>Authentic Flavors</span>
+          <span>Memorable Dining</span>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="./about.html" class="scroll-down">
+        <span>Scroll Down</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <!-- LEFT : VIDEO -->
+        <div class="about-video">
+          <video autoplay muted loop playsinline>
+            <source src="./assets/video/video 1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- RIGHT : CONTENT -->
+        <div class="about-content">
+          <span class="section-subtitle">ABOUT SPICE GARDEN</span>
+
+          <h2>
+            Where Tradition Meets
+            <span>Exceptional Taste</span>
+          </h2>
+
+          <p>
+            Welcome to Spice Garden, where every dish tells a story of authentic
+            flavours, carefully selected ingredients, and timeless culinary
+            traditions.
+          </p>
+
+          <p>
+            From traditional recipes to modern creations, our chefs bring
+            passion and creativity to every plate, creating an experience that
+            is meant to be savoured and remembered.
+          </p>
+
+          <a href="about.html" class="read-more">
+            Read More
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <!-- SOCIAL ICONS -->
+          <div class="about-social">
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------advertise------- -->
+    <section class="biryani-ad">
+      <div class="biryani-overlay">
+        <span class="ad-label">TODAY'S SPECIAL</span>
+
+        <h2>
+          DELICIOUS
+          <span>BIRYANI</span>
+        </h2>
+
+        <p class="ad-tagline">Rich Aroma. Authentic Taste.</p>
+
+        <p class="ad-description">A Royal Treat for every Food Lover!</p>
+
+        <div class="ad-features">
+          <span>✓ Fresh Ingredients</span>
+          <span>✓ Perfectly Cooked</span>
+          <span>✓ Chef Special</span>
+        </div>
+
+        <a href="./menu.html" class="ad-order-btn"> ORDER NOW </a>
+
+        <p class="ad-limited">Limited Time Offer — Don't Miss Out!</p>
+      </div>
+
+      <!-- 50% OFF -->
+      <div class="offer-badge">
+        <span>50%</span>
+        <strong>OFF</strong>
+      </div>
+    </section>
+
+    <!-- ----Product-card------ -->
+    <section class="menu-section" id="menu">
+      <div class="menu-container">
+        <div class="section-heading">
+          <span class="section-subtitle">Taste the Difference</span>
+          <h2>Our Signature Menu</h2>
+          <p>
+            Carefully crafted dishes made with fresh ingredients and authentic
+            flavors.
+          </p>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Biryani -->
+          <article class="menu-card">
+            <div class="menu-image">
+              <img
+                src="./assets/images/food-gallery/biryani.webp"
+                alt="Chicken Biryani"
+              />
+              <span class="menu-badge">Popular</span>
+            </div>
+
+            <div class="menu-content">
+              <div class="menu-top">
+                <h3>Chicken Biryani</h3>
+                <span class="price">₹249</span>
+              </div>
+
+              <div class="rating">★★★★★ <span>4.9</span></div>
+
+              <p>
+                Fragrant basmati rice cooked with tender chicken and aromatic
+                spices.
+              </p>
+
+              <div class="menu-buttons">
+                <a href="./menu.html" class="btn-primary">Order Now</a>
+                <a href="./menu.html" class="btn-secondary">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Burger -->
+          <article class="menu-card">
+            <div class="menu-image">
+              <img
+                src="./assets/images/food-gallery/burger.webp"
+                alt="Classic Burger"
+              />
+            </div>
+
+            <div class="menu-content">
+              <div class="menu-top">
+                <h3>Classic Burger</h3>
+                <span class="price">₹179</span>
+              </div>
+
+              <div class="rating">★★★★★ <span>4.8</span></div>
+
+              <p>
+                Juicy grilled patty with fresh vegetables and our signature
+                sauce.
+              </p>
+
+              <div class="menu-buttons">
+                <a href="./menu.html" class="btn-primary">Order Now</a>
+                <a href="./menu.html" class="btn-secondary">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pasta -->
+          <article class="menu-card">
+            <div class="menu-image">
+              <img
+                src="./assets/images/food-gallery/pasta.webp"
+                alt="Creamy Pasta"
+              />
+            </div>
+
+            <div class="menu-content">
+              <div class="menu-top">
+                <h3>Creamy Pasta</h3>
+                <span class="price">₹199</span>
+              </div>
+
+              <div class="rating">★★★★★ <span>4.7</span></div>
+
+              <p>
+                Creamy Italian pasta tossed with herbs, vegetables and rich
+                sauce.
+              </p>
+
+              <div class="menu-buttons">
+                <a href="./menu.html" class="btn-primary">Order Now</a>
+                <a href="./menu.html" class="btn-secondary">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pizza -->
+          <article class="menu-card">
+            <div class="menu-image">
+              <img
+                src="./assets/images/food-gallery/pizza.webp"
+                alt="Cheese Pizza"
+              />
+            </div>
+
+            <div class="menu-content">
+              <div class="menu-top">
+                <h3>Cheese Pizza</h3>
+                <span class="price">₹299</span>
+              </div>
+
+              <div class="rating">★★★★★ <span>4.9</span></div>
+
+              <p>
+                Crispy golden crust topped with premium cheese and fresh
+                toppings.
+              </p>
+
+              <div class="menu-buttons">
+                <a href="./menu.html" class="btn-primary">Order Now</a>
+                <a href="./menu.html" class="btn-secondary">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Salad -->
+          <article class="menu-card">
+            <div class="menu-image">
+              <img
+                src="./assets/images/food-gallery/salad.webp"
+                alt="Fresh Garden Salad"
+              />
+            </div>
+
+            <div class="menu-content">
+              <div class="menu-top">
+                <h3>Garden Salad</h3>
+                <span class="price">₹149</span>
+              </div>
+
+              <div class="rating">★★★★★ <span>4.6</span></div>
+
+              <p>
+                Fresh seasonal vegetables served with a light and delicious
+                dressing.
+              </p>
+
+              <div class="menu-buttons">
+                <a href="./menu.html" class="btn-primary">Order Now</a>
+                <a href="./menu.html" class="btn-secondary">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dessert -->
+          <article class="menu-card">
+            <div class="menu-image">
+              <img
+                src="./assets/images/food-gallery/dessert.webp"
+                alt="Special Dessert"
+              />
+              <span class="menu-badge">Chef's Choice</span>
+            </div>
+
+            <div class="menu-content">
+              <div class="menu-top">
+                <h3>Special Dessert</h3>
+                <span class="price">₹159</span>
+              </div>
+
+              <div class="rating">★★★★★ <span>4.8</span></div>
+
+              <p>A delightful sweet creation prepared specially by our chef.</p>
+
+              <div class="menu-buttons">
+                <a href="./menu.html" class="btn-primary">Order Now</a>
+                <a href="./menu.html" class="btn-secondary">Read More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-more">
+          <a href="./menu.html" class="view-menu-btn">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsteller--------- -->
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <div class="newsletter-overlay"></div>
+
+        <div class="newsletter-content">
+          <span class="newsletter-subtitle">NEWSLETTER</span>
+
+          <h1>Subscribe to our Newsletter</h1>
+
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              aria-label="Email address"
+              required
+            />
+
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer----------- -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-overlay"></div>
+
+        <!-- Brand -->
+        <div class="footer-column footer-brand">
+          <a href="./index.html" class="footer-logo">Spice <span>Garden</span></a>
+
+          <p>
+            Experience authentic flavors, warm hospitality, and unforgettable
+            dining at Spice Garden.
+          </p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./menu.html">Our Menu</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-column">
+          <h3>Opening Hours</h3>
+
+          <div class="opening-hours">
+            <div>
+              <span>Monday - Friday</span>
+              <strong>11:00 AM - 10:30 PM</strong>
+            </div>
+
+            <div>
+              <span>Saturday</span>
+              <strong>11:00 AM - 11:00 PM</strong>
+            </div>
+
+            <div>
+              <span>Sunday</span>
+              <strong>12:00 PM - 10:30 PM</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Lucknow, Uttar Pradesh, India</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@spicegarden.com"> info@spicegarden.com </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+          <p>© 2026 Spice Garden. All Rights Reserved.</p>
+
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

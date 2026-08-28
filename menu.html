@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium restaurant offering delicious cuisine, elegant dining and exceptional service."
+    />
+    <meta
+      name="keywords"
+      content="restaurant, fine dining, food, dinner, lunch, reservation"
+    />
+    <meta name="author" content="Spice Garden Restaurant" />
+    <title>Spice Garden Restaurant | Fine Dining Experience</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_shopping_cart"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/pages/menu.css" />
+    <!-- --Header, Advertisment and Footer CSS-- -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <div class="menu-video-container">
+      <div class="menu-hero-overlay"></div>
+      <video autoplay muted loop id="menu-bg-video">
+        <source
+          src="./assets/images/hero/restoria-preview.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <header>
+      <!-- -------LOGO-------- -->
+      <div class="logo">
+        <a href="index.html"><img src="./assets/logo/logo-sm-white.png" /></a>
+      </div>
+      <!-- -------NAVIGATION BAR-------- -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- -------HAMBURGER MENU-------- -->
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- ------Reservation Button------- -->
+      <a href="./contact.html" class="tst-btn tst-res-btn">Reservation</a>
+      <!-- ---------cart-------- -->
+      <a href="./shop.html" class="header-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="menu-hero" id="home">
+      <div class="menu-hero-content">
+        <span class="menu-hero-subtitle">Fresh & Delicious</span>
+
+        <h1>Our Signature Dishes</h1>
+
+        <p>
+          Discover our selection of carefully prepared dishes, made with fresh
+          ingredients and authentic flavors.
+        </p>
+
+        <div class="menu-hero-buttons">
+          <a href="#menu" class="menu-btn menu-btn-primary"> View Our Menu </a>
+
+          <a href="#reservation" class="menu-btn menu-btn-secondary">
+            Reserve a Table
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     MENU SECTION
+========================= -->
+
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="menu-section-heading">
+          <span class="menu-eyebrow"> Fresh & Delicious </span>
+
+          <h2>Explore Our Menu</h2>
+
+          <p>
+            Discover our carefully crafted dishes, prepared with fresh
+            ingredients and authentic flavors.
+          </p>
+        </div>
+
+        <!-- Menu Categories -->
+
+        <div class="menu-categories">
+          <button class="menu-filter active" data-category="all">All</button>
+
+          <button class="menu-filter" data-category="main-course">
+            Main Course
+          </button>
+
+          <button class="menu-filter" data-category="starters">Starters</button>
+
+          <button class="menu-filter" data-category="fast-food">
+            Fast Food
+          </button>
+
+          <button class="menu-filter" data-category="desserts">Desserts</button>
+
+          <button class="menu-filter" data-category="beverages">
+            Beverages
+          </button>
+        </div>
+
+        <!-- Menu Grid -->
+
+        <div class="menu-grid">
+          <!-- Biryani -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img
+                src="./assets/images/food-gallery/biryani.webp"
+                alt="Special Biryani"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3>Special Biryani</h3>
+                <span class="menu-price">₹299</span>
+              </div>
+
+              <div class="menu-rating">★★★★★ <span>4.9</span></div>
+
+              <p>
+                Fragrant basmati rice cooked with aromatic spices and tender
+                chicken.
+              </p>
+
+              <div class="menu-card-footer">
+                <a href="#" class="menu-order-btn"> Order Now </a>
+
+                <a href="#" class="menu-read-more"> Read More </a>
+                <!-- Add To Cart -->
+                <button
+                  type="button"
+                  class="menu-cart-btn"
+                  aria-label="Add Special Biryani to cart"
+                  data-name="Special Biryani"
+                  data-price="299"
+                  data-image="./assets/images/food-gallery/biryani.webp"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Burger -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img
+                src="./assets/images/food-gallery/burger.webp"
+                alt="Garden Special Burger"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3>Garden Special Burger</h3>
+                <span class="menu-price">₹199</span>
+              </div>
+
+              <div class="menu-rating">★★★★★ <span>4.8</span></div>
+
+              <p>
+                Juicy grilled patty with fresh vegetables, cheese and our
+                signature sauce.
+              </p>
+
+              <div class="menu-card-footer">
+                <a href="#" class="menu-order-btn"> Order Now </a>
+
+                <a href="#" class="menu-read-more"> Read More </a>
+                <button
+                  type="button"
+                  class="menu-cart-btn"
+                  aria-label="Add Creamy Garden Pasta to cart"
+                  data-name="Creamy Garden Pasta"
+                  data-price="249"
+                  data-image="./assets/images/food-gallery/pasta.webp"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pasta -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img
+                src="./assets/images/food-gallery/pasta.webp"
+                alt="Creamy Garden Pasta"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3>Creamy Garden Pasta</h3>
+                <span class="menu-price">₹249</span>
+              </div>
+
+              <div class="menu-rating">★★★★★ <span>4.8</span></div>
+
+              <p>
+                Creamy pasta tossed with fresh vegetables, herbs and our
+                signature sauce.
+              </p>
+
+              <div class="menu-card-footer">
+                <a href="#" class="menu-order-btn"> Order Now </a>
+
+                <a href="#" class="menu-read-more"> Read More </a>
+                <button
+                  type="button"
+                  class="menu-cart-btn"
+                  aria-label="Add Fresh Garden Salad to cart"
+                  data-name="Fresh Garden Salad"
+                  data-price="149"
+                  data-image="./assets/images/food-gallery/salad.webp"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pizza -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img
+                src="./assets/images/food-gallery/pizza.webp"
+                alt="Garden Special Pizza"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3>Garden Special Pizza</h3>
+                <span class="menu-price">₹279</span>
+              </div>
+
+              <div class="menu-rating">★★★★★ <span>4.8</span></div>
+
+              <p>
+                Crispy golden crust topped with fresh vegetables, mozzarella
+                cheese and herbs.
+              </p>
+
+              <div class="menu-card-footer">
+                <a href="#" class="menu-order-btn"> Order Now </a>
+
+                <a href="#" class="menu-read-more"> Read More </a>
+                <button
+                  type="button"
+                  class="menu-cart-btn"
+                  aria-label="Add Garden Special Pizza to cart"
+                  data-name="Garden Special Pizza"
+                  data-price="279"
+                  data-image="./assets/images/food-gallery/pizza.webp"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Salad -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img
+                src="./assets/images/food-gallery/salad.webp"
+                alt="Fresh Garden Salad"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3>Fresh Garden Salad</h3>
+                <span class="menu-price">₹149</span>
+              </div>
+
+              <div class="menu-rating">★★★★★ <span>4.7</span></div>
+
+              <p>
+                Crisp seasonal vegetables served with a refreshing house
+                dressing.
+              </p>
+
+              <div class="menu-card-footer">
+                <a href="#" class="menu-order-btn"> Order Now </a>
+
+                <a href="#" class="menu-read-more"> Read More </a>
+                <button
+                  type="button"
+                  class="menu-cart-btn"
+                  aria-label="Add Fresh Garden Salad to cart"
+                  data-name="Fresh Garden Salad"
+                  data-price="149"
+                  data-image="./assets/images/food-gallery/salad.webp"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dessert -->
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img
+                src="./assets/images/food-gallery/dessert.webp"
+                alt="Garden Special Dessert"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3>Garden Special Dessert</h3>
+                <span class="menu-price">₹159</span>
+              </div>
+
+              <div class="menu-rating">★★★★★ <span>4.8</span></div>
+
+              <p>
+                A delightful house dessert crafted with rich flavors to finish
+                your meal perfectly.
+              </p>
+
+              <div class="menu-card-footer">
+                <a href="#" class="menu-order-btn"> Order Now </a>
+
+                <a href="#" class="menu-read-more"> Read More </a>
+                <button
+                  type="button"
+                  class="menu-cart-btn"
+                  aria-label="Add Garden Special Dessert to cart"
+                  data-name="Garden Special Dessert"
+                  data-price="159"
+                  data-image="./assets/images/food-gallery/dessert.webp"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------advertise------- -->
+    <section class="biryani-ad">
+      <div class="biryani-overlay">
+        <span class="ad-label">TODAY'S SPECIAL</span>
+
+        <h2>
+          DELICIOUS
+          <span>BIRYANI</span>
+        </h2>
+
+        <p class="ad-tagline">Rich Aroma. Authentic Taste.</p>
+
+        <p class="ad-description">A Royal Treat for every Food Lover!</p>
+
+        <div class="ad-features">
+          <span>✓ Fresh Ingredients</span>
+          <span>✓ Perfectly Cooked</span>
+          <span>✓ Chef Special</span>
+        </div>
+
+        <a href="#order" class="ad-order-btn"> ORDER NOW </a>
+
+        <p class="ad-limited">Limited Time Offer — Don't Miss Out!</p>
+      </div>
+
+      <!-- 50% OFF -->
+      <div class="offer-badge">
+        <span>50%</span>
+        <strong>OFF</strong>
+      </div>
+    </section>
+
+    <!-- =========================
+     ADVERTISEMENT
+========================== -->
+
+    <section class="menu-ad">
+      <div class="menu-ad-content">
+        <span class="menu-ad-label"> A Special Treat For You </span>
+
+        <h2>Make Your Dining Experience Truly Special</h2>
+
+        <p>
+          Enjoy delicious flavors, warm hospitality, and an unforgettable
+          experience at Spice Garden.
+        </p>
+
+        <a href="#reservation" class="menu-ad-btn"> Reserve Your Table </a>
+      </div>
+    </section>
+
+    <!-- footer----------- -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-overlay"></div>
+
+        <!-- Brand -->
+        <div class="footer-column footer-brand">
+          <a href="#" class="footer-logo">Spice <span>Garden</span></a>
+
+          <p>
+            Experience authentic flavors, warm hospitality, and unforgettable
+            dining at Spice Garden.
+          </p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./menu.html">Our Menu</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-column">
+          <h3>Opening Hours</h3>
+
+          <div class="opening-hours">
+            <div>
+              <span>Monday - Friday</span>
+              <strong>11:00 AM - 10:30 PM</strong>
+            </div>
+
+            <div>
+              <span>Saturday</span>
+              <strong>11:00 AM - 11:00 PM</strong>
+            </div>
+
+            <div>
+              <span>Sunday</span>
+              <strong>12:00 PM - 10:30 PM</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Lucknow, Uttar Pradesh, India</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@spicegarden.com"> info@spicegarden.com </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+          <p>© 2026 Spice Garden. All Rights Reserved.</p>
+
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>
