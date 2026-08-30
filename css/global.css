@@ -122,8 +122,8 @@ header {
   justify-content: space-between;
   width: auto;
   height: var(--navbar-height);
-  margin: 18px;
-  padding: 50px;
+  margin: 12px;
+  padding: 42px;
   border-radius: 12px;
 }
 
@@ -137,8 +137,12 @@ header {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 32px;
-  margin-right: 40px;
+  gap: 26px;
+  margin-right: 30px;
+}
+
+.header-cart {
+width: 34px;
 }
 
 .nav-links a {
@@ -161,7 +165,7 @@ header {
   position: relative;
   /* right: 115px; */
   background: var(--btn-primary);
-  font-size: 23px;
+  font-size: 20px;
   padding: 15px 30px;
   margin-right: 30px;
   border-radius: 6px;
