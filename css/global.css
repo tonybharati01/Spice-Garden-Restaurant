@@ -142,7 +142,7 @@ header {
 }
 
 .header-cart {
-width: 34px;
+  width: 34px;
 }
 
 .nav-links a {
@@ -191,7 +191,7 @@ width: 34px;
 }
 
 /* ------header mobile and tablet view------- */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   header {
     margin: auto;
     width: 100%;
@@ -212,22 +212,25 @@ width: 34px;
     right: -33px;
   }
   .nav-links {
-    position: fixed;
-    right: -100%;
-    top: 85px; /* Apne navbar ki height ke hisaab se set karein */
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
     flex-direction: column;
-    background: #fff;
-    width: 52vh;
+    position: absolute;
+    top: 100%;
+    right: 0;
     margin: 15px;
+    padding: 25px;
+    width: calc(100% - 30px);
     gap: 0;
     border-radius: 12px;
     text-align: center;
     transition: 0.3s ease;
     z-index: 9999;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  }
-  .nav-links.active {
-    left: 0;
+    background-color: var(--bg-cream);
+    border-radius: 10px;
   }
   .nav-links li {
     margin: 20px 0;
@@ -238,13 +241,10 @@ width: 34px;
   .header-cart {
     position: relative;
     display: block;
-    /* margin-right: 0; */
     right: -30px;
   }
-  body {
-    height: 340px;
-  }
 }
+
 
 /* =================================
    BIRYANI AD SECTION
